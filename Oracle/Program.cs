@@ -54,8 +54,8 @@ namespace Oracle
 
             commands.CommandErrored += CommandErrored;
 
-            commands.RegisterCommands<InternalCommands>();
             commands.RegisterCommands<SwitchCommands>();
+            commands.RegisterCommands<OwnerCommands>();
 
             await client.ConnectAsync();
 
